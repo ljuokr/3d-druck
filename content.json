@@ -83,6 +83,14 @@
       "blocks": [
        {
         "type": "html",
+        "html": "<figure class=\"schritt\"><img src=\"/assets/mini-plus.jpg\" alt=\"Prusa MINI+ mit orangem Bedienfeld, auf der Druckplatte ein pinkfarbenes Objekt im Druck\" width=\"800\" height=\"797\" loading=\"lazy\"><figcaption>Prusa MINI+ an der PHBern.</figcaption></figure>"
+       }
+      ]
+     },
+     {
+      "blocks": [
+       {
+        "type": "html",
         "html": "<figure class=\"schritt\"><img src=\"/assets/core-one-04.jpg\" alt=\"Prusa CORE One mit geschlossener Tür, Aufkleber Düsendurchmesser 0.4 mm\" width=\"800\" height=\"1067\" loading=\"lazy\"><figcaption>CORE One mit Düse 0,4 mm.</figcaption></figure>"
        }
       ]
@@ -132,7 +140,7 @@
       "blocks": [
        {
         "type": "html",
-        "html": "<h2>Tinkercad</h2><p><a href=\"https://www.tinkercad.com/\" rel=\"noopener noreferrer\" target=\"_blank\">Tinkercad</a> ist ein einfaches CAD-Programm (Computer Aided Design) im Browser. Es eignet sich für einen niederschwelligen Einstieg in die 3D-Welt, auch mit Schülerinnen und Schülern.</p><ul><li><a href=\"https://www.tinkercad.com/learn\" rel=\"noopener noreferrer\" target=\"_blank\">Learning Center</a>: Aufgaben und Tutorials</li><li><a href=\"https://www.tinkercad.com/learn/designs?collectionId=OSZ5W2BL1W5N51F\" rel=\"noopener noreferrer\" target=\"_blank\">Die ersten 12 Tutorials</a>: die wichtigsten Schritte zum 3D-Modellieren</li><li><a href=\"https://www.tinkercad.com/learn/codeblocks\" rel=\"noopener noreferrer\" target=\"_blank\">Codeblöcke</a>: Modelle mit Blöcken programmieren</li><li><a href=\"https://www.youtube.com/playlist?list=PLkDXhoxPf8iHDjEXRbctq-EOU-glCNvYP\" rel=\"noopener noreferrer\" target=\"_blank\">Tutorials auf Deutsch für die Schule</a> (YouTube)</li></ul><p>Fertiges Modell über «Exportieren» als <strong>.STL</strong> speichern.</p>"
+        "html": "<h2>Tinkercad</h2><p><a href=\"https://www.tinkercad.com/\" rel=\"noopener noreferrer\" target=\"_blank\">Tinkercad</a> ist ein einfaches CAD-Programm (Computer Aided Design) im Browser. Es eignet sich für einen niederschwelligen Einstieg in die 3D-Welt, auch mit Schülerinnen und Schülern.</p><ul><li><a href=\"https://www.tinkercad.com/learn\" rel=\"noopener noreferrer\" target=\"_blank\">Learning Center</a>: Aufgaben und Tutorials</li><li><a href=\"https://www.tinkercad.com/learn/designs?collectionId=OSZ5W2BL1W5N51F\" rel=\"noopener noreferrer\" target=\"_blank\">Die ersten 12 Tutorials</a>: die wichtigsten Schritte zum 3D-Modellieren</li><li><a href=\"https://www.tinkercad.com/learn/codeblocks\" rel=\"noopener noreferrer\" target=\"_blank\">Codeblöcke</a>: Modelle mit Blöcken programmieren</li><li><a href=\"https://www.youtube.com/playlist?list=PLkDXhoxPf8iHDjEXRbctq-EOU-glCNvYP\" rel=\"noopener noreferrer\" target=\"_blank\">Tutorials auf Deutsch für die Schule</a> (YouTube)</li></ul><figure class=\"schritt\"><img src=\"/assets/tinkercad.jpg\" alt=\"Tinkercad-Arbeitsfläche mit vielen rautenförmigen Plättchen, rechts die Formenauswahl\" width=\"800\" height=\"798\" loading=\"lazy\"><figcaption>Arbeitsfläche in Tinkercad.</figcaption></figure><p>Fertiges Modell über «Exportieren» als <strong>.STL</strong> speichern.</p>"
        }
       ]
      }
@@ -166,7 +174,7 @@
       "blocks": [
        {
         "type": "html",
-        "html": "<h2>KI-Generierung mit OpenSCAD</h2><p>Eine KI kann OpenSCAD-Code schreiben. Im <a href=\"https://ochafik.com/openscad2/\" rel=\"noopener noreferrer\" target=\"_blank\">OpenSCAD Playground</a> wird der Code als Modell angezeigt und als STL exportiert. Beispielprompt:</p><p>«Erstelle mir einen OpenSCAD-Code für eine Schachfigur im Stil eines Springers, aber als Walross mit Hörnern.»</p><p>Tipp: Masse in Millimetern vorgeben und Änderungen in kleinen Schritten verlangen, zum Beispiel «mach den Sockel 5 mm höher».</p>"
+        "html": "<h2>KI-Generierung mit OpenSCAD</h2><p>Eine KI kann OpenSCAD-Code schreiben. Im <a href=\"https://ochafik.com/openscad2/\" rel=\"noopener noreferrer\" target=\"_blank\">OpenSCAD Playground</a> wird der Code als Modell angezeigt und als STL exportiert. Beispielprompt:</p><p>«Erstelle mir einen OpenSCAD-Code für eine Schachfigur im Stil eines Springers, aber als Walross mit Hörnern.»</p><figure class=\"schritt\"><img src=\"/assets/openscad-walross.jpg\" alt=\"OpenSCAD Playground: links der von der KI geschriebene Code, rechts das gerenderte Modell einer Walross-Schachfigur mit Stosszähnen und roten Hörnern\" width=\"800\" height=\"523\" loading=\"lazy\"><figcaption>Walross-Schachfigur im OpenSCAD Playground, unten links «Download STL».</figcaption></figure><p>Tipp: Masse in Millimetern vorgeben und Änderungen in kleinen Schritten verlangen, zum Beispiel «mach den Sockel 5 mm höher».</p>"
        }
       ]
      }
@@ -258,7 +266,7 @@
       "blocks": [
        {
         "type": "html",
-        "html": "<h2>Modell slicen</h2><ol><li>STL-Datei auf die Arbeitsfläche von PrusaSlicer ziehen. Mit <kbd>S</kbd> skalieren, mit <kbd>R</kbd> drehen. Die grösste flache Seite gehört nach unten.</li><li>Oben rechts prüfen: Drucker (mit passender Düse), Filament «Generic PLA».</li><li>Bei Bedarf anpassen:<ul><li><strong>Stützstrukturen (Support):</strong> nötig bei grossen Überhängen, Öffnungen oder steilen Winkeln.</li><li><strong>Füllung (Infill):</strong> 10 bis 20 % genügen. Je kleiner der Wert, desto schneller und materialsparender, aber auch fragiler.</li><li><strong>Spiralvasenmodus:</strong> druckt nur die Aussenkontur, ohne Deckel, zum Beispiel für Vasen und Lampenschirme.</li></ul></li><li>«Jetzt slicen» klicken.</li><li>Im Reiter «Vorschau» den Druck Schicht für Schicht prüfen. Mit «Farben nach Linientyp» wird sichtbar, was Aussenwand, Stützstruktur oder Füllung ist. Unten rechts steht die Druckzeit.</li><li>«G-Code exportieren» und die Datei auf den USB-Stick speichern. Sie hat die Endung <strong>.bgcode</strong>.</li></ol><p>Sinnvoll ablegen: die .bgcode-Datei zusammen mit einem Screenshot der Vorschau unter demselben Namen speichern.</p>"
+        "html": "<h2>Modell slicen</h2><ol><li>STL-Datei auf die Druckplatte in PrusaSlicer ziehen. Mit <kbd>S</kbd> skalieren, mit <kbd>R</kbd> drehen. Die grösste flache Seite gehört nach unten: mit <kbd>F</kbd> die Fläche anklicken, die auf der Platte liegen soll.</li><li>Oben rechts prüfen: Drucker (mit passender Düse), Filament «Generic PLA».</li><li>Bei Bedarf anpassen:<ul><li><strong>Stützmaterial:</strong> nötig bei grossen Überhängen, Öffnungen oder steilen Winkeln.</li><li><strong>Fülldichte:</strong> 10 bis 20 % genügen. Je kleiner der Wert, desto schneller und materialsparender, aber auch fragiler.</li><li><strong>Spiralvasenmodus</strong> («Druckeinstellungen» › «Schichten und Umfänge»): druckt nur die Aussenkontur, ohne Deckel, zum Beispiel für Vasen und Lampenschirme.</li></ul></li><li>«Jetzt slicen» klicken.</li><li>Nach dem Slicen zeigt PrusaSlicer die Vorschau (Schichten-Symbol unten links). Mit dem Schichtregler rechts den Druck Schicht für Schicht prüfen. Die Legende zeigt unter «Merkmalstyp», was Aussenwand, Stützmaterial oder Füllung ist, und die geschätzte Druckzeit.</li><li>«G-Code exportieren» und die Datei auf den USB-Stick speichern. Sie hat die Endung <strong>.bgcode</strong>.</li></ol><figure class=\"schritt\"><img src=\"/assets/prusaslicer-vorschau.jpg\" alt=\"PrusaSlicer im Reiter Vorschau: Vase auf der Druckplatte der MINI, links die Legende mit Druckzeiten nach Merkmalstyp, rechts der Schichtregler\" width=\"900\" height=\"900\" loading=\"lazy\"><figcaption>Vorschau in PrusaSlicer mit Legende und Schichtregler.</figcaption></figure><p>Sinnvoll ablegen: die .bgcode-Datei zusammen mit einem Screenshot der Vorschau unter demselben Namen speichern.</p>"
        }
       ]
      }
@@ -275,7 +283,7 @@
       "blocks": [
        {
         "type": "html",
-        "html": "<p>G-Code sind Bewegungsbefehle für den Drucker, je nach Objekt mehrere tausend Zeilen. G steht für Geometrie, X, Y und Z für die Achsen, F für die Vorschubgeschwindigkeit in mm pro Minute. Die Datei .bgcode ist die platzsparende binäre Form, die Prusa-Drucker direkt lesen. Beispiel für ein Quadrat:</p><pre><code>G28            ; alle Achsen auf Startposition\nG1 Z0.2 F1200  ; Düse 0,2 mm über das Bett\nG1 X10 Y10 F3000\nG1 X100 Y10 F1500   ; Linie drucken\nG1 X100 Y100 F1500\nG1 X10 Y100 F1500\nG1 X10 Y10 F1500    ; Quadrat geschlossen\nM104 S0        ; Düsenheizung aus\nM140 S0        ; Bettheizung aus\nM84            ; Motoren aus</code></pre>"
+        "html": "<p>G-Code sind Bewegungsbefehle für den Drucker, je nach Objekt mehrere tausend Zeilen. G-Befehle bewegen den Druckkopf, M-Befehle schalten Funktionen wie Heizung und Motoren. X, Y und Z sind die Achsen, E schiebt Filament nach, F ist die Geschwindigkeit in mm pro Minute. Die Datei .bgcode ist die platzsparende binäre Form, die Prusa-Drucker direkt lesen. Beispiel für ein Quadrat:</p><pre><code>G28                    ; alle Achsen auf Startposition\nM109 S215              ; Düse auf 215 °C heizen und warten\nG1 Z0.2 F1200          ; Düse 0,2 mm über das Bett\nG1 X10 Y10 F3000\nG1 X100 Y10 E3 F1500   ; Linie drucken, E fördert Filament\nG1 X100 Y100 E3 F1500\nG1 X10 Y100 E3 F1500\nG1 X10 Y10 E3 F1500    ; Quadrat geschlossen\nM104 S0                ; Düsenheizung aus\nM84                    ; Motoren aus</code></pre>"
        }
       ]
      }
@@ -350,7 +358,7 @@
       "blocks": [
        {
         "type": "html",
-        "html": "<p>Die erste Schicht entscheidet. Sie soll gleichmässig flach aufliegen und gut haften. Löst sie sich, zieht Fäden oder bleibt die Düse leer: Druck über das Menü abbrechen, Platte reinigen, neu starten. Danach regelmässig nachschauen. Die Tür der CORE One während des Drucks geschlossen lassen.</p>"
+        "html": "<p>Die erste Schicht entscheidet. Sie soll gleichmässig flach aufliegen und gut haften. Löst sie sich, zieht Fäden oder bleibt die Düse leer: Druck über das Menü abbrechen, Platte mit Isopropanol und Papiertuch reinigen, neu starten. Danach regelmässig nachschauen. Die Tür der CORE One während des Drucks geschlossen lassen.</p>"
        }
       ]
      }
@@ -401,7 +409,7 @@
       "blocks": [
        {
         "type": "html",
-        "html": "<h2>Fehlerbehebung</h2><h3>USB-Stick wird nicht erkannt</h3><p>Prusa-Drucker lesen nur Sticks im Format FAT32. Neue Sticks ab 64 GB sind oft als exFAT formatiert. Umformatieren am Mac (löscht den Inhalt):</p><ol><li>Festplattendienstprogramm öffnen.</li><li>Links den Stick auswählen, oben «Löschen» klicken.</li><li>Format «MS-DOS (FAT)» wählen, Namen eingeben, bestätigen.</li></ol><p>Sticks über 32 GB lassen sich unter Windows nur mit Zusatzprogrammen in FAT32 formatieren.</p><h3>Druck misslingt</h3><p>Häufige Fehlerbilder und ihre Behebung zeigt der <a href=\"https://www.simplify3d.com/resources/print-quality-troubleshooting/\" rel=\"noopener noreferrer\" target=\"_blank\">Print Quality Guide von Simplify3D</a> (englisch). Die meisten Probleme beginnen bei der ersten Schicht: Platte reinigen und die Datei mit den Standardeinstellungen neu slicen.</p>"
+        "html": "<h2>Fehlerbehebung</h2><h3>USB-Stick wird nicht erkannt</h3><p>Prusa-Drucker lesen nur Sticks im Format FAT32. Neue Sticks ab 64 GB sind oft als exFAT formatiert. Umformatieren am Mac (löscht den Inhalt):</p><ol><li>Festplattendienstprogramm öffnen.</li><li>Menü «Darstellung» › «Alle Geräte einblenden», links den Stick (oberste Ebene) auswählen, oben «Löschen» klicken.</li><li>Format «MS-DOS (FAT)» und Schema «Master Boot Record» wählen, Namen eingeben, bestätigen.</li></ol><p>Sticks über 32 GB lassen sich unter Windows nur mit Zusatzprogrammen in FAT32 formatieren.</p><h3>Druck misslingt</h3><p>Häufige Fehlerbilder und ihre Behebung zeigt der <a href=\"https://www.simplify3d.com/resources/print-quality-troubleshooting/\" rel=\"noopener noreferrer\" target=\"_blank\">Print Quality Guide von Simplify3D</a> (englisch). Die meisten Probleme beginnen bei der ersten Schicht: Platte reinigen und die Datei mit den Standardeinstellungen neu slicen.</p>"
        }
       ]
      }
@@ -442,7 +450,7 @@
       "blocks": [
        {
         "type": "html",
-        "html": "<h2>Was ist PLA?</h2><p>Polylactide (kurz PLA) sind Kunststoffe aus der Gruppe der Polyester. Sie werden aus nachwachsenden Rohstoffen wie Maisstärke gewonnen und lassen sich recyceln, zum Beispiel bei der <a href=\"https://recyclingfabrik.com/\" rel=\"noopener noreferrer\" target=\"_blank\">Recyclingfabrik</a> in Deutschland. PLA wird bei 60 bis 70 °C wieder weich, gedruckte Teile gehören darum nicht in die Spülmaschine oder ins heisse Auto.</p><p><a href=\"https://filamentworld.de/3d-druck-wissen/was-ist-pla/\" rel=\"noopener noreferrer\" target=\"_blank\">Mehr zu PLA und weiteren Filamenten</a></p>"
+        "html": "<h2>Was ist PLA?</h2><p>Polylactide (kurz PLA) sind Kunststoffe aus der Gruppe der Polyester. Sie werden aus nachwachsenden Rohstoffen wie Maisstärke gewonnen und lassen sich recyceln, zum Beispiel bei der <a href=\"https://recyclingfabrik.com/\" rel=\"noopener noreferrer\" target=\"_blank\">Recyclingfabrik</a> in Deutschland. PLA wird schon ab etwa 55 °C weich, gedruckte Teile gehören darum nicht in die Spülmaschine oder ins heisse Auto.</p><p><a href=\"https://filamentworld.de/3d-druck-wissen/was-ist-pla/\" rel=\"noopener noreferrer\" target=\"_blank\">Mehr zu PLA und weiteren Filamenten</a></p>"
        }
       ]
      }
@@ -459,7 +467,7 @@
       "blocks": [
        {
         "type": "html",
-        "html": "<h2>Ideensammlungen</h2><ul><li><a href=\"https://www.printables.com/model\" rel=\"noopener noreferrer\" target=\"_blank\">Printables</a></li><li><a href=\"https://www.thingiverse.com/\" rel=\"noopener noreferrer\" target=\"_blank\">Thingiverse</a></li><li><a href=\"https://www.instructables.com/\" rel=\"noopener noreferrer\" target=\"_blank\">Instructables</a></li></ul><p>Weitere Seiten des Fachbereichs: <a href=\"https://ljuokr.github.io/keramikdruck/keramikdruck.html\" rel=\"noopener noreferrer\" target=\"_blank\">3D-Keramikdruck</a>, <a href=\"https://sites.google.com/view/3d-druck-auf-textilien/home\" rel=\"noopener noreferrer\" target=\"_blank\">3D-Druck auf Textilien</a>.</p>"
+        "html": "<h2>Ideensammlungen</h2><p>Plattformen mit fertigen Modellen und Ideen siehe <a href=\"/modellieren#fertige-modelle\">Modellieren</a>.</p><p>Weitere Seiten des Fachbereichs: <a href=\"https://ljuokr.github.io/keramikdruck/keramikdruck.html\" rel=\"noopener noreferrer\" target=\"_blank\">3D-Keramikdruck</a>, <a href=\"https://sites.google.com/view/3d-druck-auf-textilien/home\" rel=\"noopener noreferrer\" target=\"_blank\">3D-Druck auf Textilien</a>.</p>"
        }
       ]
      }
@@ -483,7 +491,7 @@
       "blocks": [
        {
         "type": "html",
-        "html": "<h1>Impressum</h1><p>Grundlage ist die Google-Site «3D-Druck» des Fachbereichs Design &amp; Technik. Fragen und Rückmeldungen an <a href=\"mailto:lukas.jordi@phbern.ch\">lukas.jordi@phbern.ch</a> (PHBern) oder <a href=\"mailto:lukas.jordi@phlu.ch\">lukas.jordi@phlu.ch</a> (PH Luzern).</p><p>Lukas Jordi, in Co-Autorschaft mit Claude (KI-Assistent von Anthropic). Stand Oktober 2026.</p><p><a href=\"https://creativecommons.org/licenses/by-nc-sa/4.0/deed.de\" rel=\"license noopener noreferrer\" target=\"_blank\"><img src=\"/assets/lizenz-cc-by-nc-sa.png\" alt=\"Lizenz Creative Commons BY-NC-SA 4.0\" width=\"134\" height=\"47\"></a></p><p>Die Seite steht unter der Lizenz Creative Commons BY-NC-SA 4.0. Fotos aus dem Atelier der PH Luzern.</p>"
+        "html": "<h1>Impressum</h1><p>Grundlage ist die Google-Site «3D-Druck» des Fachbereichs Design &amp; Technik. Fragen und Rückmeldungen an <a href=\"mailto:lukas.jordi@phbern.ch\">lukas.jordi@phbern.ch</a> (PHBern) oder <a href=\"mailto:lukas.jordi@phlu.ch\">lukas.jordi@phlu.ch</a> (PH Luzern).</p><p>Lukas Jordi, in Co-Autorschaft mit Claude (KI-Assistent von Anthropic). Stand Oktober 2026.</p><p><a href=\"https://creativecommons.org/licenses/by-nc-sa/4.0/deed.de\" rel=\"license noopener noreferrer\" target=\"_blank\"><img src=\"/assets/lizenz-cc-by-nc-sa.png\" alt=\"Lizenz Creative Commons BY-NC-SA 4.0\" width=\"134\" height=\"47\"></a></p><p>Die Seite steht unter der Lizenz Creative Commons BY-NC-SA 4.0. Fotos und Screenshots aus den Ateliers der PHBern und der PH Luzern sowie aus der bisherigen Google-Site.</p>"
        }
       ]
      }
