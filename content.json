@@ -1,0 +1,494 @@
+[
+ {
+  "slug": "3d-druck",
+  "label": "Übersicht",
+  "title": "3D-Druck",
+  "sections": [
+   {
+    "id": "kopf",
+    "accordion": false,
+    "title": "",
+    "anchor": "",
+    "gallery": false,
+    "cells": [
+     {
+      "blocks": [
+       {
+        "type": "html",
+        "html": "<h1>3D-Druck</h1><p class=\"lead\">Fachbereich <a href=\"https://sites.google.com/view/design-und-technik/home\" rel=\"noopener noreferrer\" target=\"_blank\">Design &amp; Technik</a></p><p>Diese Anleitung führt vom eigenen 3D-Modell bis zum fertigen Druck aus PLA. An der PHBern stehen Drucker vom Typ Prusa MINI+, an der PH Luzern zwei Prusa CORE One. Die Anleitung beschränkt sich auf das Wichtigste, damit der erste Druck gelingt.</p><p>3D-Druck (additive Fertigung) baut ein Objekt Schicht für Schicht auf. Grundlage ist ein digitales 3D-Modell, zum Beispiel aus Tinkercad. Es wird als STL-Datei exportiert. Ein Slicer wie PrusaSlicer zerlegt das Modell in waagrechte Schichten und übersetzt sie in G-Code, die Maschinensprache des Druckers.</p><p>Für den Einstieg: mit kleinen, einfachen Objekten und kurzer Druckzeit beginnen und wo immer möglich die Standardeinstellungen verwenden.</p>"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "vorgehen",
+    "accordion": false,
+    "title": "Vorgehen",
+    "anchor": "",
+    "gallery": false,
+    "cells": [
+     {
+      "blocks": [
+       {
+        "type": "html",
+        "html": "<h2>Vorgehen</h2><ol><li><a href=\"/modellieren\">Modellieren</a>: Objekt in Tinkercad zeichnen, mit KI als OpenSCAD-Code erzeugen oder ein fertiges Modell suchen. Als STL exportieren.</li><li><a href=\"/slicen\">Slicen</a>: STL in PrusaSlicer öffnen, den richtigen Drucker wählen, G-Code auf einen USB-Stick speichern.</li><li><a href=\"/drucken\">Drucken</a>: Stick einstecken, Datei wählen, erste Schicht beobachten.</li><li><a href=\"/drucken#entnehmen\">Entnehmen</a>: abkühlen lassen, Druckblech abnehmen und leicht biegen.</li><li><a href=\"/drucken#aufraeumen\">Aufräumen</a>: Reste entsorgen, Platz sauber hinterlassen.</li></ol>"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "ablauf",
+    "accordion": false,
+    "title": "Vom Modell zum Druck",
+    "anchor": "",
+    "gallery": false,
+    "cells": [
+     {
+      "blocks": [
+       {
+        "type": "html",
+        "html": "<h2>Vom Modell zum Druck</h2><div class=\"diagram\" tabindex=\"0\" role=\"region\" aria-label=\"Ablaufgrafik, bei Bedarf seitlich verschiebbar\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 736 150\" role=\"img\" aria-labelledby=\"ab-t ab-d\" font-family=\"Lato, Arial, sans-serif\" fill=\"#222\"><title id=\"ab-t\">Vom Modell zum Druck</title><desc id=\"ab-d\">Schritt 1 Modellieren in Tinkercad, mit KI oder als fertiges Modell, Ergebnis eine STL-Datei. Schritt 2 Slicen in PrusaSlicer, Ergebnis eine bgcode-Datei. Schritt 3 Übertragen per USB-Stick. Schritt 4 Drucken und die erste Schicht beobachten. Schritt 5 Entnehmen und aufräumen.</desc><defs><marker id=\"ab-p\" viewBox=\"0 0 10 10\" refX=\"0\" refY=\"5\" markerWidth=\"10\" markerHeight=\"10\" markerUnits=\"userSpaceOnUse\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 z\" fill=\"#087d84\"/></marker></defs><rect x=\"4\" y=\"20\" width=\"128\" height=\"110\" rx=\"6\" fill=\"#f5f8f8\" stroke=\"#087d84\" stroke-width=\"1.5\"/><circle cx=\"68.0\" cy=\"20\" r=\"11\" fill=\"#087d84\"/><text x=\"68.0\" y=\"25\" font-size=\"15\" font-weight=\"bold\" fill=\"#fff\" text-anchor=\"middle\">1</text><text x=\"68.0\" y=\"62\" font-size=\"16\" font-weight=\"bold\" text-anchor=\"middle\">Modellieren</text><text x=\"68.0\" y=\"86\" font-size=\"14\" fill=\"#646464\" text-anchor=\"middle\">Tinkercad, KI,</text><text x=\"68.0\" y=\"104\" font-size=\"14\" fill=\"#646464\" text-anchor=\"middle\">fertige Modelle</text><path d=\"M134,75 L142,75\" stroke=\"#087d84\" stroke-width=\"2\" marker-end=\"url(#ab-p)\"/><rect x=\"154\" y=\"20\" width=\"128\" height=\"110\" rx=\"6\" fill=\"#f5f8f8\" stroke=\"#087d84\" stroke-width=\"1.5\"/><circle cx=\"218.0\" cy=\"20\" r=\"11\" fill=\"#087d84\"/><text x=\"218.0\" y=\"25\" font-size=\"15\" font-weight=\"bold\" fill=\"#fff\" text-anchor=\"middle\">2</text><text x=\"218.0\" y=\"62\" font-size=\"16\" font-weight=\"bold\" text-anchor=\"middle\">Slicen</text><text x=\"218.0\" y=\"86\" font-size=\"14\" fill=\"#646464\" text-anchor=\"middle\">PrusaSlicer,</text><text x=\"218.0\" y=\"104\" font-size=\"14\" fill=\"#646464\" text-anchor=\"middle\">STL zu bgcode</text><path d=\"M284,75 L292,75\" stroke=\"#087d84\" stroke-width=\"2\" marker-end=\"url(#ab-p)\"/><rect x=\"304\" y=\"20\" width=\"128\" height=\"110\" rx=\"6\" fill=\"#f5f8f8\" stroke=\"#087d84\" stroke-width=\"1.5\"/><circle cx=\"368.0\" cy=\"20\" r=\"11\" fill=\"#087d84\"/><text x=\"368.0\" y=\"25\" font-size=\"15\" font-weight=\"bold\" fill=\"#fff\" text-anchor=\"middle\">3</text><text x=\"368.0\" y=\"62\" font-size=\"16\" font-weight=\"bold\" text-anchor=\"middle\">Übertragen</text><text x=\"368.0\" y=\"86\" font-size=\"14\" fill=\"#646464\" text-anchor=\"middle\">USB-Stick</text><text x=\"368.0\" y=\"104\" font-size=\"14\" fill=\"#646464\" text-anchor=\"middle\">(FAT32)</text><path d=\"M434,75 L442,75\" stroke=\"#087d84\" stroke-width=\"2\" marker-end=\"url(#ab-p)\"/><rect x=\"454\" y=\"20\" width=\"128\" height=\"110\" rx=\"6\" fill=\"#f5f8f8\" stroke=\"#087d84\" stroke-width=\"1.5\"/><circle cx=\"518.0\" cy=\"20\" r=\"11\" fill=\"#087d84\"/><text x=\"518.0\" y=\"25\" font-size=\"15\" font-weight=\"bold\" fill=\"#fff\" text-anchor=\"middle\">4</text><text x=\"518.0\" y=\"62\" font-size=\"16\" font-weight=\"bold\" text-anchor=\"middle\">Drucken</text><text x=\"518.0\" y=\"86\" font-size=\"14\" fill=\"#646464\" text-anchor=\"middle\">erste Schicht</text><text x=\"518.0\" y=\"104\" font-size=\"14\" fill=\"#646464\" text-anchor=\"middle\">beobachten</text><path d=\"M584,75 L592,75\" stroke=\"#087d84\" stroke-width=\"2\" marker-end=\"url(#ab-p)\"/><rect x=\"604\" y=\"20\" width=\"128\" height=\"110\" rx=\"6\" fill=\"#f5f8f8\" stroke=\"#087d84\" stroke-width=\"1.5\"/><circle cx=\"668.0\" cy=\"20\" r=\"11\" fill=\"#087d84\"/><text x=\"668.0\" y=\"25\" font-size=\"15\" font-weight=\"bold\" fill=\"#fff\" text-anchor=\"middle\">5</text><text x=\"668.0\" y=\"62\" font-size=\"16\" font-weight=\"bold\" text-anchor=\"middle\">Entnehmen</text><text x=\"668.0\" y=\"86\" font-size=\"14\" fill=\"#646464\" text-anchor=\"middle\">Blech biegen,</text><text x=\"668.0\" y=\"104\" font-size=\"14\" fill=\"#646464\" text-anchor=\"middle\">aufräumen</text></svg></div>"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "geraete",
+    "accordion": false,
+    "title": "Drucker an PHBern und PH Luzern",
+    "anchor": "",
+    "gallery": false,
+    "cells": [
+     {
+      "blocks": [
+       {
+        "type": "html",
+        "html": "<h2>Drucker an PHBern und PH Luzern</h2><table><thead><tr><th scope=\"col\">Hochschule</th><th scope=\"col\">Drucker</th><th scope=\"col\">Düse</th><th scope=\"col\">Druckraum</th><th scope=\"col\">Druckerprofil in PrusaSlicer</th></tr></thead><tbody><tr><th scope=\"row\">PHBern</th><td>Original Prusa MINI+</td><td>0,4 mm</td><td>180 × 180 × 180 mm</td><td>Original Prusa MINI &amp; MINI+ Input Shaper, Düse 0,4 mm</td></tr><tr><th scope=\"row\">PH Luzern</th><td>Prusa CORE One, zwei Geräte, geschlossenes Gehäuse</td><td>0,4 mm oder 0,6 mm, steht auf dem Aufkleber oben rechts</td><td>250 × 220 × 270 mm</td><td>Prusa CORE One mit der Düse, die auf dem Aufkleber steht</td></tr></tbody></table><p>Die Düse bestimmt, wie fein gedruckt wird. Mit 0,4 mm werden Details feiner, mit 0,6 mm ist der Druck deutlich schneller und stabiler. Die Datei muss immer für die Düse des Druckers geslict sein, auf dem gedruckt wird.</p>"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "geraete-bilder",
+    "accordion": false,
+    "title": "",
+    "anchor": "",
+    "gallery": true,
+    "cells": [
+     {
+      "blocks": [
+       {
+        "type": "html",
+        "html": "<figure class=\"schritt\"><img src=\"/assets/core-one-04.jpg\" alt=\"Prusa CORE One mit geschlossener Tür, Aufkleber Düsendurchmesser 0.4 mm\" width=\"800\" height=\"1067\" loading=\"lazy\"><figcaption>CORE One mit Düse 0,4 mm.</figcaption></figure>"
+       }
+      ]
+     },
+     {
+      "blocks": [
+       {
+        "type": "html",
+        "html": "<figure class=\"schritt\"><img src=\"/assets/core-one-06.jpg\" alt=\"Prusa CORE One mit Aufkleber Düsendurchmesser 0.6 mm, im Innern die Druckplatte\" width=\"800\" height=\"1067\" loading=\"lazy\"><figcaption>CORE One mit Düse 0,6 mm.</figcaption></figure>"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "slug": "modellieren",
+  "label": "Modellieren",
+  "title": "Modellieren",
+  "sections": [
+   {
+    "id": "kopf-modellieren",
+    "accordion": false,
+    "title": "",
+    "anchor": "",
+    "gallery": false,
+    "cells": [
+     {
+      "blocks": [
+       {
+        "type": "html",
+        "html": "<h1>Modellieren</h1><p>Drei Wege führen zu einer STL-Datei. Gleich in der Grösse modellieren, in der gedruckt wird, und den Druckraum des Druckers beachten (siehe <a href=\"/3d-druck#geraete\">Übersicht</a>).</p>"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "tinkercad",
+    "accordion": false,
+    "title": "Tinkercad",
+    "anchor": "",
+    "gallery": false,
+    "cells": [
+     {
+      "blocks": [
+       {
+        "type": "html",
+        "html": "<h2>Tinkercad</h2><p><a href=\"https://www.tinkercad.com/\" rel=\"noopener noreferrer\" target=\"_blank\">Tinkercad</a> ist ein einfaches CAD-Programm (Computer Aided Design) im Browser. Es eignet sich für einen niederschwelligen Einstieg in die 3D-Welt, auch mit Schülerinnen und Schülern.</p><ul><li><a href=\"https://www.tinkercad.com/learn\" rel=\"noopener noreferrer\" target=\"_blank\">Learning Center</a>: Aufgaben und Tutorials</li><li><a href=\"https://www.tinkercad.com/learn/designs?collectionId=OSZ5W2BL1W5N51F\" rel=\"noopener noreferrer\" target=\"_blank\">Die ersten 12 Tutorials</a>: die wichtigsten Schritte zum 3D-Modellieren</li><li><a href=\"https://www.tinkercad.com/learn/codeblocks\" rel=\"noopener noreferrer\" target=\"_blank\">Codeblöcke</a>: Modelle mit Blöcken programmieren</li><li><a href=\"https://www.youtube.com/playlist?list=PLkDXhoxPf8iHDjEXRbctq-EOU-glCNvYP\" rel=\"noopener noreferrer\" target=\"_blank\">Tutorials auf Deutsch für die Schule</a> (YouTube)</li></ul><p>Fertiges Modell über «Exportieren» als <strong>.STL</strong> speichern.</p>"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "klassen",
+    "accordion": true,
+    "title": "Für Lehrpersonen: Klassen erstellen",
+    "anchor": "",
+    "gallery": false,
+    "cells": [
+     {
+      "blocks": [
+       {
+        "type": "html",
+        "html": "<p>Mit einer Klasse müssen sich Schülerinnen und Schüler nicht einzeln registrieren. Der Zugang erfolgt über einen Link und die Namen, die die Lehrperson eingibt.</p><ol><li>Auf <a href=\"https://www.tinkercad.com/\" rel=\"noopener noreferrer\" target=\"_blank\">tinkercad.com</a> registrieren.</li><li>Beim <a href=\"https://www.tinkercad.com/login\" rel=\"noopener noreferrer\" target=\"_blank\">Login</a> «Lehrkräfte» wählen.</li><li>In den Profileinstellungen prüfen, ob das Konto als Lehrkraft geführt wird. Nur dann lassen sich Klassen anlegen und verwalten.</li></ol>"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "ki",
+    "accordion": false,
+    "title": "KI-Generierung mit OpenSCAD",
+    "anchor": "",
+    "gallery": false,
+    "cells": [
+     {
+      "blocks": [
+       {
+        "type": "html",
+        "html": "<h2>KI-Generierung mit OpenSCAD</h2><p>Eine KI kann OpenSCAD-Code schreiben. Im <a href=\"https://ochafik.com/openscad2/\" rel=\"noopener noreferrer\" target=\"_blank\">OpenSCAD Playground</a> wird der Code als Modell angezeigt und als STL exportiert. Beispielprompt:</p><p>«Erstelle mir einen OpenSCAD-Code für eine Schachfigur im Stil eines Springers, aber als Walross mit Hörnern.»</p><p>Tipp: Masse in Millimetern vorgeben und Änderungen in kleinen Schritten verlangen, zum Beispiel «mach den Sockel 5 mm höher».</p>"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "fertige-modelle",
+    "accordion": false,
+    "title": "Fertige Modelle",
+    "anchor": "",
+    "gallery": false,
+    "cells": [
+     {
+      "blocks": [
+       {
+        "type": "html",
+        "html": "<h2>Fertige Modelle</h2><ul><li><a href=\"https://www.printables.com/model\" rel=\"noopener noreferrer\" target=\"_blank\">Printables</a> von Prusa</li><li><a href=\"https://www.thingiverse.com/\" rel=\"noopener noreferrer\" target=\"_blank\">Thingiverse</a></li><li><a href=\"https://www.instructables.com/\" rel=\"noopener noreferrer\" target=\"_blank\">Instructables</a>: Ideen und Anleitungen</li></ul><p>Lizenz des Modells beachten, viele erlauben nur nicht-kommerzielle Nutzung mit Namensnennung.</p>"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "dateiformate",
+    "accordion": true,
+    "title": "Dateiformate",
+    "anchor": "",
+    "gallery": false,
+    "cells": [
+     {
+      "blocks": [
+       {
+        "type": "html",
+        "html": "<p>Die Endung des Dateinamens zeigt das Format. 3D-Modelle liegen meist als <strong>.STL</strong> vor (nur die Oberfläche als Dreiecke, ohne Farbe und ohne Masseinheit, PrusaSlicer liest sie als Millimeter). Daneben gibt es <strong>.3MF</strong> (mit Einheit und Einstellungen) und <strong>.OBJ</strong>. Der Drucker selbst liest nur G-Code (.gcode oder .bgcode).</p>"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "slug": "slicen",
+  "label": "Slicen",
+  "title": "Slicen",
+  "sections": [
+   {
+    "id": "kopf-slicen",
+    "accordion": false,
+    "title": "",
+    "anchor": "",
+    "gallery": false,
+    "cells": [
+     {
+      "blocks": [
+       {
+        "type": "html",
+        "html": "<h1>Slicen</h1><p>Der Slicer übersetzt die STL-Datei in eine Arbeitsanweisung für den Drucker (G-Code). Verwendet wird <a href=\"https://www.prusa3d.com/page/prusaslicer_424/\" rel=\"noopener noreferrer\" target=\"_blank\">PrusaSlicer</a>, gratis für Windows, macOS und Linux.</p>"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "installieren",
+    "accordion": false,
+    "title": "PrusaSlicer einrichten",
+    "anchor": "",
+    "gallery": false,
+    "cells": [
+     {
+      "blocks": [
+       {
+        "type": "html",
+        "html": "<h2>PrusaSlicer einrichten</h2><ol><li><a href=\"https://www.prusa3d.com/page/prusaslicer_424/\" rel=\"noopener noreferrer\" target=\"_blank\">PrusaSlicer herunterladen</a> und installieren.</li><li>Beim ersten Start öffnet sich der Konfigurationsassistent. Dort den Drucker der eigenen Hochschule auswählen:<ul><li><strong>PHBern:</strong> Original Prusa MINI &amp; MINI+ Input Shaper, Düse 0,4 mm</li><li><strong>PH Luzern:</strong> Prusa CORE One, Düse 0,4 mm und 0,6 mm (beide hinzufügen)</li></ul></li><li>Als Filament «Generic PLA» wählen.</li></ol><p>Später lassen sich Drucker über «Konfiguration» › «Konfigurationsassistent» ergänzen.</p>"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "schritte-slicen",
+    "accordion": false,
+    "title": "Modell slicen",
+    "anchor": "",
+    "gallery": false,
+    "cells": [
+     {
+      "blocks": [
+       {
+        "type": "html",
+        "html": "<h2>Modell slicen</h2><ol><li>STL-Datei auf die Arbeitsfläche von PrusaSlicer ziehen. Mit <kbd>S</kbd> skalieren, mit <kbd>R</kbd> drehen. Die grösste flache Seite gehört nach unten.</li><li>Oben rechts prüfen: Drucker (mit passender Düse), Filament «Generic PLA».</li><li>Bei Bedarf anpassen:<ul><li><strong>Stützstrukturen (Support):</strong> nötig bei grossen Überhängen, Öffnungen oder steilen Winkeln.</li><li><strong>Füllung (Infill):</strong> 10 bis 20 % genügen. Je kleiner der Wert, desto schneller und materialsparender, aber auch fragiler.</li><li><strong>Spiralvasenmodus:</strong> druckt nur die Aussenkontur, ohne Deckel, zum Beispiel für Vasen und Lampenschirme.</li></ul></li><li>«Jetzt slicen» klicken.</li><li>Im Reiter «Vorschau» den Druck Schicht für Schicht prüfen. Mit «Farben nach Linientyp» wird sichtbar, was Aussenwand, Stützstruktur oder Füllung ist. Unten rechts steht die Druckzeit.</li><li>«G-Code exportieren» und die Datei auf den USB-Stick speichern. Sie hat die Endung <strong>.bgcode</strong>.</li></ol><p>Sinnvoll ablegen: die .bgcode-Datei zusammen mit einem Screenshot der Vorschau unter demselben Namen speichern.</p>"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "gcode",
+    "accordion": true,
+    "title": "Was ist G-Code?",
+    "anchor": "",
+    "gallery": false,
+    "cells": [
+     {
+      "blocks": [
+       {
+        "type": "html",
+        "html": "<p>G-Code sind Bewegungsbefehle für den Drucker, je nach Objekt mehrere tausend Zeilen. G steht für Geometrie, X, Y und Z für die Achsen, F für die Vorschubgeschwindigkeit in mm pro Minute. Die Datei .bgcode ist die platzsparende binäre Form, die Prusa-Drucker direkt lesen. Beispiel für ein Quadrat:</p><pre><code>G28            ; alle Achsen auf Startposition\nG1 Z0.2 F1200  ; Düse 0,2 mm über das Bett\nG1 X10 Y10 F3000\nG1 X100 Y10 F1500   ; Linie drucken\nG1 X100 Y100 F1500\nG1 X10 Y100 F1500\nG1 X10 Y10 F1500    ; Quadrat geschlossen\nM104 S0        ; Düsenheizung aus\nM140 S0        ; Bettheizung aus\nM84            ; Motoren aus</code></pre>"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "slug": "drucken",
+  "label": "Drucken",
+  "title": "Drucken",
+  "sections": [
+   {
+    "id": "kopf-drucken",
+    "accordion": false,
+    "title": "",
+    "anchor": "",
+    "gallery": false,
+    "cells": [
+     {
+      "blocks": [
+       {
+        "type": "html",
+        "html": "<h1>Drucken</h1><p>Ablauf an der Prusa MINI+ (PHBern) und der Prusa CORE One (PH Luzern). Bedient wird mit dem Drehknopf (drehen und drücken), an der CORE One auch über den Touchscreen.</p><figure class=\"schritt\"><img src=\"/assets/core-one-display.jpg\" alt=\"Bedienfeld der CORE One: Touchscreen mit den Feldern Drucken, Vorheizen, Filament, Steuerung, Einstellung und Info, rechts der Drehknopf und der eingesteckte USB-Stick\" width=\"700\" height=\"290\" loading=\"lazy\"><figcaption>Bedienfeld der CORE One, rechts der USB-Anschluss.</figcaption></figure>"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "vorbereiten",
+    "accordion": true,
+    "title": "1. Vorbereiten",
+    "anchor": "",
+    "gallery": false,
+    "cells": [
+     {
+      "blocks": [
+       {
+        "type": "html",
+        "html": "<ol><li>Drucker einschalten.</li><li>Druckplatte kontrollieren: sauber, ohne Reste des letzten Drucks. Die Druckfläche nicht mit den Fingern berühren, Fett verhindert die Haftung.</li><li>Prüfen, ob Filament geladen ist und genug auf der Spule ist. Farbe wechseln über das Menü «Filament».</li><li>An der CORE One prüfen, ob die Düse auf dem Aufkleber zur Datei passt.</li></ol>"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "starten",
+    "accordion": true,
+    "title": "2. Druck starten",
+    "anchor": "",
+    "gallery": false,
+    "cells": [
+     {
+      "blocks": [
+       {
+        "type": "html",
+        "html": "<ol><li>USB-Stick einstecken: an der MINI+ vorne, an der CORE One rechts neben dem Bildschirm.</li><li>Datei auswählen und «Drucken» bestätigen.</li><li>Der Drucker heizt auf und vermisst das Bett selbständig. Das dauert einige Minuten.</li></ol><p>Meldet der Drucker, dass die Datei für eine andere Düse oder einen anderen Drucker geslict wurde, nicht weiterdrucken, sondern neu slicen.</p>"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "beobachten",
+    "accordion": true,
+    "title": "3. Erste Schicht beobachten",
+    "anchor": "",
+    "gallery": false,
+    "cells": [
+     {
+      "blocks": [
+       {
+        "type": "html",
+        "html": "<p>Die erste Schicht entscheidet. Sie soll gleichmässig flach aufliegen und gut haften. Löst sie sich, zieht Fäden oder bleibt die Düse leer: Druck über das Menü abbrechen, Platte reinigen, neu starten. Danach regelmässig nachschauen. Die Tür der CORE One während des Drucks geschlossen lassen.</p>"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "entnehmen",
+    "accordion": true,
+    "title": "4. Entnehmen",
+    "anchor": "",
+    "gallery": false,
+    "cells": [
+     {
+      "blocks": [
+       {
+        "type": "html",
+        "html": "<ol><li>Warten, bis das Druckbett abgekühlt ist.</li><li>Das magnetische Druckblech abnehmen und leicht biegen, der Druck löst sich. Kein Werkzeug auf der Druckfläche verwenden.</li><li>Blech wieder auflegen, es rastet hinten an den Stiften ein.</li><li>Stützstrukturen vorsichtig abbrechen.</li></ol>"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "aufraeumen",
+    "accordion": true,
+    "title": "5. Aufräumen",
+    "anchor": "",
+    "gallery": false,
+    "cells": [
+     {
+      "blocks": [
+       {
+        "type": "html",
+        "html": "<ol><li>Fehldrucke und Reste in den Abfall.</li><li>USB-Stick mitnehmen.</li><li>Leere Spulen und Defekte melden. [VOR ORT PRUEFEN: an wen und ob die Drucker am Schluss ausgeschaltet werden]</li></ol>"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "fehler",
+    "accordion": false,
+    "title": "Fehlerbehebung",
+    "anchor": "",
+    "gallery": false,
+    "cells": [
+     {
+      "blocks": [
+       {
+        "type": "html",
+        "html": "<h2>Fehlerbehebung</h2><h3>USB-Stick wird nicht erkannt</h3><p>Prusa-Drucker lesen nur Sticks im Format FAT32. Neue Sticks ab 64 GB sind oft als exFAT formatiert. Umformatieren am Mac (löscht den Inhalt):</p><ol><li>Festplattendienstprogramm öffnen.</li><li>Links den Stick auswählen, oben «Löschen» klicken.</li><li>Format «MS-DOS (FAT)» wählen, Namen eingeben, bestätigen.</li></ol><p>Sticks über 32 GB lassen sich unter Windows nur mit Zusatzprogrammen in FAT32 formatieren.</p><h3>Druck misslingt</h3><p>Häufige Fehlerbilder und ihre Behebung zeigt der <a href=\"https://www.simplify3d.com/resources/print-quality-troubleshooting/\" rel=\"noopener noreferrer\" target=\"_blank\">Print Quality Guide von Simplify3D</a> (englisch). Die meisten Probleme beginnen bei der ersten Schicht: Platte reinigen und die Datei mit den Standardeinstellungen neu slicen.</p>"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "slug": "pla",
+  "label": "PLA und Ideen",
+  "title": "PLA und Ideen",
+  "sections": [
+   {
+    "id": "kopf-pla",
+    "accordion": false,
+    "title": "",
+    "anchor": "",
+    "gallery": false,
+    "cells": [
+     {
+      "blocks": [
+       {
+        "type": "html",
+        "html": "<h1>PLA und Ideen</h1>"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "was-ist-pla",
+    "accordion": false,
+    "title": "Was ist PLA?",
+    "anchor": "",
+    "gallery": false,
+    "cells": [
+     {
+      "blocks": [
+       {
+        "type": "html",
+        "html": "<h2>Was ist PLA?</h2><p>Polylactide (kurz PLA) sind Kunststoffe aus der Gruppe der Polyester. Sie werden aus nachwachsenden Rohstoffen wie Maisstärke gewonnen und lassen sich recyceln, zum Beispiel bei der <a href=\"https://recyclingfabrik.com/\" rel=\"noopener noreferrer\" target=\"_blank\">Recyclingfabrik</a> in Deutschland. PLA wird bei 60 bis 70 °C wieder weich, gedruckte Teile gehören darum nicht in die Spülmaschine oder ins heisse Auto.</p><p><a href=\"https://filamentworld.de/3d-druck-wissen/was-ist-pla/\" rel=\"noopener noreferrer\" target=\"_blank\">Mehr zu PLA und weiteren Filamenten</a></p>"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "ideen",
+    "accordion": false,
+    "title": "Ideensammlungen",
+    "anchor": "",
+    "gallery": false,
+    "cells": [
+     {
+      "blocks": [
+       {
+        "type": "html",
+        "html": "<h2>Ideensammlungen</h2><ul><li><a href=\"https://www.printables.com/model\" rel=\"noopener noreferrer\" target=\"_blank\">Printables</a></li><li><a href=\"https://www.thingiverse.com/\" rel=\"noopener noreferrer\" target=\"_blank\">Thingiverse</a></li><li><a href=\"https://www.instructables.com/\" rel=\"noopener noreferrer\" target=\"_blank\">Instructables</a></li></ul><p>Weitere Seiten des Fachbereichs: <a href=\"https://ljuokr.github.io/keramikdruck/keramikdruck.html\" rel=\"noopener noreferrer\" target=\"_blank\">3D-Keramikdruck</a>, <a href=\"https://sites.google.com/view/3d-druck-auf-textilien/home\" rel=\"noopener noreferrer\" target=\"_blank\">3D-Druck auf Textilien</a>.</p>"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "slug": "impressum",
+  "label": "Impressum",
+  "title": "Impressum",
+  "sections": [
+   {
+    "id": "impressum",
+    "accordion": false,
+    "title": "Impressum",
+    "anchor": "",
+    "gallery": false,
+    "cells": [
+     {
+      "blocks": [
+       {
+        "type": "html",
+        "html": "<h1>Impressum</h1><p>Grundlage ist die Google-Site «3D-Druck» des Fachbereichs Design &amp; Technik. Fragen und Rückmeldungen an <a href=\"mailto:lukas.jordi@phbern.ch\">lukas.jordi@phbern.ch</a> (PHBern) oder <a href=\"mailto:lukas.jordi@phlu.ch\">lukas.jordi@phlu.ch</a> (PH Luzern).</p><p>Lukas Jordi, in Co-Autorschaft mit Claude (KI-Assistent von Anthropic). Stand Oktober 2026.</p><p><a href=\"https://creativecommons.org/licenses/by-nc-sa/4.0/deed.de\" rel=\"license noopener noreferrer\" target=\"_blank\"><img src=\"/assets/lizenz-cc-by-nc-sa.png\" alt=\"Lizenz Creative Commons BY-NC-SA 4.0\" width=\"134\" height=\"47\"></a></p><p>Die Seite steht unter der Lizenz Creative Commons BY-NC-SA 4.0. Fotos aus dem Atelier der PH Luzern.</p>"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+]
