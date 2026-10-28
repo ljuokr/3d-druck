@@ -392,7 +392,7 @@
       "blocks": [
        {
         "type": "html",
-        "html": "<ol><li>Fehldrucke und Reste in den Abfall.</li><li>USB-Stick mitnehmen.</li><li>Leere Spulen und Defekte melden. [VOR ORT PRUEFEN: an wen und ob die Drucker am Schluss ausgeschaltet werden]</li></ol>"
+        "html": "<ol><li>Fehldrucke und Reste in den Abfall.</li><li>USB-Stick mitnehmen.</li></ol>"
        }
       ]
      }
