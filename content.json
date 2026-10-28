@@ -288,23 +288,6 @@
       ]
      }
     ]
-   },
-   {
-    "id": "gcode",
-    "accordion": true,
-    "title": "Was ist G-Code?",
-    "anchor": "",
-    "gallery": false,
-    "cells": [
-     {
-      "blocks": [
-       {
-        "type": "html",
-        "html": "<p>G-Code sind Bewegungsbefehle für den Drucker, je nach Objekt mehrere tausend Zeilen. G-Befehle bewegen den Druckkopf, M-Befehle schalten Funktionen wie Heizung und Motoren. X, Y und Z sind die Achsen, E schiebt Filament nach, F ist die Geschwindigkeit in mm pro Minute. Die Datei .bgcode ist die platzsparende binäre Form, die Prusa-Drucker direkt lesen. Beispiel für ein Quadrat:</p><pre><code>G28                    ; alle Achsen auf Startposition\nM83                    ; E-Werte gelten pro Linie\nM109 S215              ; Düse auf 215 °C heizen und warten\nG1 Z0.2 F1200          ; Düse 0,2 mm über das Bett\nG1 X10 Y10 F3000\nG1 X100 Y10 E3 F1500   ; Linie drucken, E fördert Filament\nG1 X100 Y100 E3 F1500\nG1 X10 Y100 E3 F1500\nG1 X10 Y10 E3 F1500    ; Quadrat geschlossen\nM104 S0                ; Düsenheizung aus\nM84                    ; Motoren aus</code></pre>"
-       }
-      ]
-     }
-    ]
    }
   ]
  },
@@ -324,7 +307,7 @@
       "blocks": [
        {
         "type": "html",
-        "html": "<h1>Drucken</h1><p>Ablauf an der Prusa MINI+ (PHBern) und der Prusa CORE One (PH Luzern). Bedient wird mit dem Drehknopf (drehen und drücken), an der CORE One auch über den Touchscreen.</p><figure class=\"schritt\"><img src=\"/assets/core-one-display.jpg\" alt=\"Bedienfeld der CORE One: Touchscreen mit den Feldern Drucken, Vorheizen, Filament, Steuerung, Einstellung und Info, rechts der Drehknopf und der eingesteckte USB-Stick\" width=\"700\" height=\"290\" loading=\"lazy\"><figcaption>Bedienfeld der CORE One, rechts der USB-Anschluss.</figcaption></figure>"
+        "html": "<h1>Drucken</h1><p>Ablauf an der Prusa MINI+ (PHBern) und der Prusa CORE One (PH Luzern). Bedient wird mit dem Drehknopf (drehen und drücken), an der CORE One auch über den Touchscreen.</p><figure class=\"schritt\"><img src=\"/assets/core-one-display.jpg\" alt=\"Bedienfeld der CORE One: Touchscreen mit den Feldern Drucken, Vorheizen, Filament, Steuerung, Einstellung und Info, rechts der Drehknopf und der eingesteckte USB-Stick\" width=\"700\" height=\"290\" loading=\"lazy\"><figcaption>Bedienfeld der CORE One, rechts der USB-Anschluss.</figcaption></figure><figure class=\"schritt\"><img src=\"/assets/prusa-mini-teile.jpg\" alt=\"Prusa MINI+ mit nummerierten Teilen, unter anderem 4 Drehknopf, 6 Hauptschalter, 7 USB-Anschluss, 16 Filamentspule\" width=\"900\" height=\"678\" loading=\"lazy\"><figcaption>Prusa MINI+: (4) Drehknopf, (6) Hauptschalter, (7) USB-Anschluss, (16) Filamentspule. Bild: Handbuch Prusa MINI+, S. 12, Prusa Research a.s.</figcaption></figure>"
        }
       ]
      }
@@ -593,7 +576,7 @@
       "blocks": [
        {
         "type": "html",
-        "html": "<h1>Impressum</h1><p>Grundlage ist die Google-Site «3D-Druck» des Fachbereichs Design &amp; Technik (Lukas Jordi und Simone Niklaus). Fragen und Rückmeldungen an <a href=\"mailto:lukas.jordi@phbern.ch\">lukas.jordi@phbern.ch</a> (PHBern) oder <a href=\"mailto:lukas.jordi@phlu.ch\">lukas.jordi@phlu.ch</a> (PH Luzern).</p><p>Lukas Jordi, in Co-Autorschaft mit Claude (KI-Assistent von Anthropic). Stand Oktober 2026.</p><p><a href=\"https://creativecommons.org/licenses/by-nc-sa/4.0/deed.de\" rel=\"license noopener noreferrer\" target=\"_blank\"><img src=\"/assets/lizenz-cc-by-nc-sa.png\" alt=\"Lizenz Creative Commons BY-NC-SA 4.0\" width=\"134\" height=\"47\"></a></p><p>Die Seite steht unter der Lizenz Creative Commons BY-NC-SA 4.0. Fotos und Screenshots aus den Ateliers der PHBern und der PH Luzern sowie aus der bisherigen Google-Site. Fotos der Ideensammlung unter freien Lizenzen, Nachweis jeweils unter dem Bild.</p>"
+        "html": "<h1>Impressum</h1><p>Grundlage ist die Google-Site «3D-Druck» des Fachbereichs Design &amp; Technik (Lukas Jordi und Simone Niklaus). Fragen und Rückmeldungen an <a href=\"mailto:lukas.jordi@phbern.ch\">lukas.jordi@phbern.ch</a> (PHBern) oder <a href=\"mailto:lukas.jordi@phlu.ch\">lukas.jordi@phlu.ch</a> (PH Luzern).</p><p>Lukas Jordi, in Co-Autorschaft mit Claude Opus 5.5 (KI-Modell von Anthropic). Stand Oktober 2026.</p><p><a href=\"https://creativecommons.org/licenses/by-nc-sa/4.0/deed.de\" rel=\"license noopener noreferrer\" target=\"_blank\"><img src=\"/assets/lizenz-cc-by-nc-sa.png\" alt=\"Lizenz Creative Commons BY-NC-SA 4.0\" width=\"134\" height=\"47\"></a></p><p>Die Seite steht unter der Lizenz Creative Commons BY-NC-SA 4.0. Fotos und Screenshots aus den Ateliers der PHBern und der PH Luzern sowie aus der bisherigen Google-Site. Fotos der Ideensammlung unter freien Lizenzen, Nachweis jeweils unter dem Bild.</p>"
        }
       ]
      }
