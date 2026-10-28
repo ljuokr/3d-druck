@@ -225,7 +225,7 @@
       "blocks": [
        {
         "type": "html",
-        "html": "<p>Die Endung des Dateinamens zeigt das Format. 3D-Modelle liegen meist als <strong>.STL</strong> vor (nur die Oberfläche als Dreiecke, ohne Farbe und ohne Masseinheit, PrusaSlicer liest sie als Millimeter). Daneben gibt es <strong>.3MF</strong> (mit Einheit und Einstellungen) und <strong>.OBJ</strong>. Der Drucker selbst liest nur G-Code (.gcode oder .bgcode).</p>"
+        "html": "<p>Die Endung des Dateinamens zeigt das Format. 3D-Modelle liegen meist als <strong>.STL</strong> vor (nur die Oberfläche als Dreiecke, ohne Farbe und ohne Masseinheit, PrusaSlicer liest sie als Millimeter). <a href=\"https://drive.google.com/file/d/1xI1iFx5FcrRJz5fcyp4BFM9tAOqPcCgc/view?usp=drive_link\" rel=\"noopener noreferrer\" target=\"_blank\">Beispiel einer STL-Datei</a> (Eisbär) zum Herunterladen und Drehen. Daneben gibt es <strong>.3MF</strong> (mit Einheit und Einstellungen) und <strong>.OBJ</strong>. Der Drucker selbst liest nur G-Code (.gcode oder .bgcode).</p>"
        }
       ]
      }
@@ -593,7 +593,7 @@
       "blocks": [
        {
         "type": "html",
-        "html": "<h1>Impressum</h1><p>Grundlage ist die Google-Site «3D-Druck» des Fachbereichs Design &amp; Technik. Fragen und Rückmeldungen an <a href=\"mailto:lukas.jordi@phbern.ch\">lukas.jordi@phbern.ch</a> (PHBern) oder <a href=\"mailto:lukas.jordi@phlu.ch\">lukas.jordi@phlu.ch</a> (PH Luzern).</p><p>Lukas Jordi, in Co-Autorschaft mit Claude (KI-Assistent von Anthropic). Stand Oktober 2026.</p><p><a href=\"https://creativecommons.org/licenses/by-nc-sa/4.0/deed.de\" rel=\"license noopener noreferrer\" target=\"_blank\"><img src=\"/assets/lizenz-cc-by-nc-sa.png\" alt=\"Lizenz Creative Commons BY-NC-SA 4.0\" width=\"134\" height=\"47\"></a></p><p>Die Seite steht unter der Lizenz Creative Commons BY-NC-SA 4.0. Fotos und Screenshots aus den Ateliers der PHBern und der PH Luzern sowie aus der bisherigen Google-Site. Fotos der Ideensammlung unter freien Lizenzen, Nachweis jeweils unter dem Bild.</p>"
+        "html": "<h1>Impressum</h1><p>Grundlage ist die Google-Site «3D-Druck» des Fachbereichs Design &amp; Technik (Lukas Jordi und Simone Niklaus). Fragen und Rückmeldungen an <a href=\"mailto:lukas.jordi@phbern.ch\">lukas.jordi@phbern.ch</a> (PHBern) oder <a href=\"mailto:lukas.jordi@phlu.ch\">lukas.jordi@phlu.ch</a> (PH Luzern).</p><p>Lukas Jordi, in Co-Autorschaft mit Claude (KI-Assistent von Anthropic). Stand Oktober 2026.</p><p><a href=\"https://creativecommons.org/licenses/by-nc-sa/4.0/deed.de\" rel=\"license noopener noreferrer\" target=\"_blank\"><img src=\"/assets/lizenz-cc-by-nc-sa.png\" alt=\"Lizenz Creative Commons BY-NC-SA 4.0\" width=\"134\" height=\"47\"></a></p><p>Die Seite steht unter der Lizenz Creative Commons BY-NC-SA 4.0. Fotos und Screenshots aus den Ateliers der PHBern und der PH Luzern sowie aus der bisherigen Google-Site. Fotos der Ideensammlung unter freien Lizenzen, Nachweis jeweils unter dem Bild.</p>"
        }
       ]
      }
